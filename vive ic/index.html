@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Celulares Jireh</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f3f4f6; color: #1f2937; }
+        
+        /* Sección Hero (Fondo Azul) */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 40px auto; opacity: 0.9; }
+        
+        /* Botones */
+        .botones { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .btn {
+            padding: 12px 24px; border-radius: 50px; text-decoration: none;
+            font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;
+            transition: 0.3s;
+        }
+        .btn-primary { background-color: #3b82f6; color: white; border: none; }
+        .btn-primary:hover { background-color: #2563eb; }
+        .btn-outline { background-color: transparent; color: white; border: 2px solid white; }
+        .btn-outline:hover { background-color: rgba(255,255,255,0.1); }
+
+        /* Sección Tarjetas */
+        .contenedor { max-width: 1200px; margin: -40px auto 50px auto; padding: 20px; }
+        .titulo-seccion { text-align: center; margin-top: 60px; margin-bottom: 40px; font-size: 2rem; color: #111827; }
+        .grid-tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .tarjeta {
+            background: white; padding: 30px; border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s;
+        }
+        .tarjeta:hover { transform: translateY(-5px); }
+        .tarjeta h3 { color: #2563eb; display: flex; align-items: center; gap: 10px; margin-top: 0; }
+        .tarjeta p { color: #4b5563; line-height: 1.6; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Sistema Celulares Jireh</h1>
+        <p>Plataforma integral de gestión analizada y diseñada por estudiantes del Instituto Continental para optimizar las operaciones técnicas y comerciales en Villa Perené.</p>
+        
+        <div class="botones">
+            <!-- Cambia este enlace por el tuyo -->
+            <a href="https://github.com/Alexvg2015/CELULARES_JIREH" class="btn btn-primary" target="_blank">
+                📁 MI REPOSITORIO GITHUB
+            </a>
+            <!-- Este botón enlaza a la página de fotos que crearemos abajo -->
+            <a href="momentos.html" class="btn btn-outline">
+                📷 MOMENTOS VIVE IC
+            </a>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <h2 class="titulo-seccion">🔗 Documentación y Alcance</h2>
+        
+        <div class="grid-tarjetas">
+            <div class="tarjeta">
+                <h3>🏪 El Negocio</h3>
+                <p>Bajo la gerencia de Yuber Vicaña Mapele en Villa Perené, el establecimiento destaca por su especialización en reparación de hardware de celulares, microsoldadura de precisión y atención comercial.</p>
+            </div>
+            
+            <div class="tarjeta">
+                <h3>💻 Stack Tecnológico</h3>
+                <p>El desarrollo se plantea sobre un entorno virtual de <strong>Python</strong> utilizando el framework <strong>Flask</strong> y SQLAlchemy. La persistencia de datos se diseña en <strong>MySQL</strong> (modelado en MySQL Workbench).</p>
+            </div>
+            
+            <div class="tarjeta">
+                <h3>🌐 Integración CI/CD</h3>
+                <p>Para agilizar el desarrollo y mantener un código limpio, la propuesta integra un módulo automatizado mediante <strong>GitHub Actions</strong>. Esto permite la validación instantánea del código.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

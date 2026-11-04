@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos Vive IC</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f3f4f6; color: #1f2937; padding: 40px 20px; }
+        .contenedor { max-width: 1200px; margin: 0 auto; text-align: center; }
+        
+        /* Botón de retorno */
+        .btn-volver {
+            background-color: #1f2937; color: white; padding: 10px 20px; border-radius: 50px;
+            text-decoration: none; font-size: 0.9rem; font-weight: 600;
+            display: inline-block; margin-bottom: 40px; transition: 0.3s;
+        }
+        .btn-volver:hover { background-color: #374151; }
+
+        /* Títulos */
+        h1 { color: #1e3a8a; font-size: 2.5rem; margin-bottom: 10px; }
+        p.subtitulo { color: #6b7280; font-size: 1.1rem; max-width: 800px; margin: 0 auto 40px auto; }
+
+        /* Cuadrícula de fotos */
+        .galeria {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; padding-bottom: 50px;
+        }
+        .galeria img {
+            width: 100%; height: 250px; object-fit: cover; border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;
+        }
+        .galeria img:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <a href="index.html" class="btn-volver">← Volver al Inicio</a>
+        
+        <h1>📷 MOMENTOS VIVE IC</h1>
+        <p class="subtitulo">Registro de nuestra presentación académica y el equipo de desarrollo de Sistemas de Información (Daniel, Jhonatan, Alizee y Alex).</p>
+        
+        <div class="galeria">
+            <!-- Para agregar más imágenes, solo copia y pega esta línea cambiando el nombre de la foto -->
+            <img src="img/foto1.jpg" alt="Presentación 1">
+            <img src="img/foto2.jpg" alt="Presentación 2">
+            <img src="img/foto3.jpg" alt="Presentación 3">
+            <img src="img/foto4.jpg" alt="Presentación 4">
+            <img src="img/foto5.jpg" alt="Presentación 5">
+            <img src="img/foto6.jpg" alt="Presentación 6">
+            <!-- Añade tus nuevas fotos aquí abajo -->
+            <!-- <img src="img/foto7.jpg" alt="Presentación 7"> -->
+        </div>
+    </div>
+
+</body>
+</html>
